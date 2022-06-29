@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
 })
 //PARALLAX END
 
-// NAV BAR
+//NAV BAR
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -19,7 +19,7 @@ const navSlide = () => {
         // toggle nav
         nav.classList.toggle('nav-active');
 
-        // animate links 
+        // animate links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
