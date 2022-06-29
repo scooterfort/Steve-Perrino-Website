@@ -283,7 +283,7 @@ header .menu {
 
 
 .hero-text h5 {
-    color: black;
+    color: rgba(0, 0, 0, 0.5);
     font-size: 3rem;
     font-family: 'Kanit', sans-serif;
     margin-bottom: 60px;
@@ -381,7 +381,6 @@ header .menu {
     height: auto;
     width: 600px;
     max-width: 100%;
-    /* filter: drop-shadow(0px 0px 5px black); */
     margin-bottom: 85px;
 }
 
@@ -421,7 +420,7 @@ header .menu {
 
 .about-text p {
     font-family: 'Poppins', sans-serif;
-    color: var(--dark-red);
+    color: rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
