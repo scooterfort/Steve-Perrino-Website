@@ -257,6 +257,10 @@ header i {
         display: none;
     }
 
+    header #checkbox {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1240px) {
