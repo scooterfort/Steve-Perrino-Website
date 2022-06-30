@@ -8,35 +8,20 @@ window.addEventListener("scroll", function () {
 })
 //PARALLAX END
 
-//NAV BAR
-// const navSlide = () => {
-//     const burger = document.querySelector('.burger');
-//     const nav = document.querySelector('.nav-links');
-//     const navLinks = document.querySelectorAll('.nav-links li');
+// NAV
+
+const toggle = document.getElementById('toggle');
+const sidebar = document.getElementById('sidebar');
 
 
-//     burger.addEventListener('click', () => {
-//         // toggle nav
-//         nav.classList.toggle('nav-active');
+document.onclick = function (e) {
+    if (e.target.id !== 'toggle' && e.target.id !== 'sidebar') {
+        toggle.classList.remove('active');
+        sidebar.classList.remove('active');
+    }
+}
 
-//         // animate links
-//         navLinks.forEach((link, index) => {
-//             if (link.style.animation) {
-//                 link.style.animation = '';
-//             }
-//             else {
-//                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-//             }
-//         });
-
-//         // burger animation
-//         burger.classList.toggle('toggle');
-
-//     });
-// }
-
-
-
-navSlide();
-
-//NAV BAR END
+toggle.onclick = function () {
+    toggle.classList.toggle('active');
+    sidebar.classList.toggle('active');
+}
